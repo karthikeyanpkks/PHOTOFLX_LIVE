@@ -1,0 +1,95 @@
+﻿@model StudioManagement.Models.StudioReg
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>StudioReg</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudioName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudioName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StudioAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudioAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mobile)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mobile)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PinCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PinCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Poc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Poc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LicenseNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LicenseNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LicenseUpto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LicenseUpto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Active)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Active)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
